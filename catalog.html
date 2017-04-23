@@ -43,34 +43,48 @@
             <a href="#">Магазин</a>
           </li>
           <li>
-            <a href="#">Средства для ухода</a>
+            <a>Средства для ухода</a>
          </li>
        </ul>
         <section class="filter">
-          <form action="#" method="post">
-            <h2>Производители:</h2>
-              <select name="brand" multiple>
-                <option selected>Baxter of california</option>
-                <option>Mr natty</<option></option>>
-                <option selected>Suavecito</option>
-                <option>Malin+goetz</option>
-                <option>Murray's</option>
-                <option selected>American crew</option>
-              </select>
-              <label>
-                <input type="radio" name="item-group" value="Бритвенные принадлежности">
-                  Бритвенные принадлежности
-              </label>
-              <label>
-                <input type="radio" name="item-group" value="Средства для ухода" checked>
-                  Средства для ухода
-              </label>
-              <label>
-                <input type="radio" name="item-group" value="Аксессуары">
-                  Аксессуары
-              </label>
-              <input type="submit" value="Показать">
-              </form>
+          <form action="#" method="get">
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                  <label> <input type="checkbox">Baxter of california</label>
+                </li>
+                <li>
+                  <label> <input type="checkbox">Mr natty</label>
+                </li>
+                <li>
+                  <label> <input type="checkbox">Suavecito</label>
+                </li>
+                <li>
+                  <label> <input type="checkbox">Malin+goetz</label>
+                </li>
+                <li>
+                  <label> <input type="checkbox">Murray's</label>
+                </li>
+                <li>
+                  <label> <input type="checkbox">American crew</label>
+                </li>
+              </ul>
+            <legend>Группы товаров:</legend>
+            <ul>
+              <li>
+                <label> <input type="radio" name="item-group" value="Бритвенные принадлежности">Бритвенные принадлежности</label>
+              </li>
+              <li>
+                <label> <input type="radio" name="item-group" value="Средства для ухода">Средства для ухода</label>
+              </li>
+              <li>
+                <label> <input type="radio" name="item-group" value="Аксессуары">Аксессуары</label>
+              </li>
+            </ul>
+            <input type="submit" value="Показать">
+          </fieldset>
+        </form>
               <div class="items-and-price">
                 <div class="catalog-item">
                   <img src="#" alt="Набор для путешествий «Baxter of california»" width="306" height="206">
